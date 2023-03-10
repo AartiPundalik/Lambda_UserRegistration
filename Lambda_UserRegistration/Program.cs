@@ -14,6 +14,7 @@ namespace Lambda_UserRegistration
             userRegistration.CheckFirstName("Aarti");
             userRegistration.CheckLastName("Pundalik");
             userRegistration.CheckEmaild("abc.xyz@bl.co.in");
+            userRegistration.CheckPhoneNumber("91 8668285117");
             Console.ReadLine();
         }
     }

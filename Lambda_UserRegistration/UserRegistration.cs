@@ -47,6 +47,17 @@ namespace Lambda_UserRegistration
                 Console.WriteLine("Its a not valid email Id");
             }
         }
+        public void CheckPhoneNumber(string phoneNumber)
+        {
+            if (registrationModels.Any(x => x.PhoneNumber.IsMatch(phoneNumber)))
+            {
+                Console.WriteLine("Its a valid phone number");
+            }
+            else
+            {
+                Console.WriteLine("Its a not valid phone number");
+            }
+        }
     }
 }
     
