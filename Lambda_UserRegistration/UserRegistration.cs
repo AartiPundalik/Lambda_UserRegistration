@@ -36,5 +36,18 @@ namespace Lambda_UserRegistration
                 Console.WriteLine("Its a not valid Last name");
             }
         }
+        public void CheckEmaild(string emailId)
+        {
+            if (registrationModels.Any(x => x.EmailId.IsMatch(emailId)))
+            {
+                Console.WriteLine("Its a valid email Id");
+            }
+            else
+            {
+                Console.WriteLine("Its a not valid email Id");
+            }
+        }
     }
 }
+    
+

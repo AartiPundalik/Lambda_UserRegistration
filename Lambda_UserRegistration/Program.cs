@@ -13,6 +13,7 @@ namespace Lambda_UserRegistration
             UserRegistration userRegistration = new UserRegistration();
             userRegistration.CheckFirstName("Aarti");
             userRegistration.CheckLastName("Pundalik");
+            userRegistration.CheckEmaild("abc.xyz@bl.co.in");
             Console.ReadLine();
         }
     }
