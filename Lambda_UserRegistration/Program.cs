@@ -12,6 +12,7 @@ namespace Lambda_UserRegistration
         {
             UserRegistration userRegistration = new UserRegistration();
             userRegistration.CheckFirstName("Aarti");
+            userRegistration.CheckLastName("Pundalik");
             Console.ReadLine();
         }
     }
