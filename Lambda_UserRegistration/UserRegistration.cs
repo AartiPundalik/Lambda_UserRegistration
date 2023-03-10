@@ -91,6 +91,17 @@ namespace Lambda_UserRegistration
                 Console.WriteLine("Its a not valid Numericpassword");
             }
         }
+        public void CheckSpecialCharacter(string specialcharacter)
+        {
+            if (registrationModels.Any(x => x.SpecialCharacter.IsMatch(specialcharacter)))
+            {
+                Console.WriteLine("Its a valid SpecialCharacter");
+            }
+            else
+            {
+                Console.WriteLine("Its a not valid SpecialCharacter");
+            }
+        }
     }
 }
     

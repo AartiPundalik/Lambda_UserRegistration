@@ -18,6 +18,7 @@ namespace Lambda_UserRegistration
             userRegistration.CheckPassword("Password");
             userRegistration.CheckStringPassword("Aarti123");
             userRegistration.CheckNumericPassword("Aarti689");
+            userRegistration.CheckSpecialCharacter("Aarti#");
             Console.ReadLine();
         }
     }
