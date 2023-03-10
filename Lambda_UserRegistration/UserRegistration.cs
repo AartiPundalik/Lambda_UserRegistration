@@ -69,6 +69,17 @@ namespace Lambda_UserRegistration
                 Console.WriteLine("Its a not valid password");
             }
         }
+        public void CheckStringPassword(string stringpassword)
+        {
+            if (registrationModels.Any(x => x.StringPassWord.IsMatch(stringpassword)))
+            {
+                Console.WriteLine("Its a valid Stringpassword");
+            }
+            else
+            {
+                Console.WriteLine("Its a not valid Stringpassword");
+            }
+        }
     }
 }
     
