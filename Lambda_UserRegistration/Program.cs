@@ -17,6 +17,7 @@ namespace Lambda_UserRegistration
             userRegistration.CheckPhoneNumber("91 8668285117");
             userRegistration.CheckPassword("Password");
             userRegistration.CheckStringPassword("Aarti123");
+            userRegistration.CheckNumericPassword("Aarti689");
             Console.ReadLine();
         }
     }
