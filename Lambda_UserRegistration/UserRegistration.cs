@@ -58,6 +58,17 @@ namespace Lambda_UserRegistration
                 Console.WriteLine("Its a not valid phone number");
             }
         }
+        public void CheckPassword(string password)
+        {
+            if (registrationModels.Any(x => x.PassWord.IsMatch(password)))
+            {
+                Console.WriteLine("Its a valid password");
+            }
+            else
+            {
+                Console.WriteLine("Its a not valid password");
+            }
+        }
     }
 }
     
